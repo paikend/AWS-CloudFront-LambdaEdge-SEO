@@ -1,0 +1,18 @@
+service: edge-seo-example
+provider:
+  name: aws
+  runtime: nodejs10.x
+# you can add packaging information here
+#package:
+#  include:
+#    - include-me.js
+#    - include-me-dir/**
+#  exclude:
+#    - exclude-me.js
+#    - exclude-me-dir/**
+
+functions:
+  metaTagOriginRequest:
+    handler: handler.metaTagOriginRequest
+  # metaTagViewerRequestRewriter:
+  #   handler: handler.metaTagViewerRequestRewriter
